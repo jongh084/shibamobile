@@ -1,0 +1,83 @@
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+}
+
+.box1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: black;
+
+  animation-name: shiba;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  animation-play-state: running;
+
+  transition-property: border-radius;
+  transition-duration: 0.5s;
+}
+
+.box1:hover {
+  animation-play-state: paused;
+  border-radius: 50%;
+}
+
+.box2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: orangered;
+
+  animation-name: shiba;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  animation-play-state: running;
+
+  transition-property: border-radius;
+  transition-duration: 0.5s;
+}
+
+.box2:hover {
+  animation-play-state: paused;
+  border-radius: 50%;
+}
+
+.box3 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: red;
+
+  animation-name: shiba;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  animation-play-state: running;
+
+  transition-property: border-radius;
+  transition-duration: 0.5s;
+}
+
+.box3:hover {
+  animation-play-state: paused;
+  border-radius: 50%;
+}
+
+@keyframes shiba {
+  from {
+    transform: rotate(0deg);
+   } 
+
+   to {
+     transform: rotate(360deg);
+   }
+}
